@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Registro</title>
+	<title>Registro de empresas</title>
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -448,6 +448,9 @@
 								<li class="nav-item"><a href="add_vacaciones.php" class="nav-link">Añadir</a></li>
 								<li class="nav-item"><a href="lista_vacaciones.php" class="nav-link">Listar</a></li>
 							</ul>
+						</li>
+						<li class="nav-item nav-item-menu"></li>
+						<a href="pagos_transporte.php" class="nav-link"><i class="icon-address-book"></i> <span>Pago de transporte</span></a>
 						</li>
 						</ul>
 					</div>

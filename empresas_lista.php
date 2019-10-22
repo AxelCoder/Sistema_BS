@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Lista de Empresas</title>
+	<title>Lista de empresas</title>
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -37,7 +37,7 @@
 	<!-- Main navbar -->
 	<div class="navbar navbar-expand-md navbar-dark">
 		<div class="navbar-brand">
-		<a href="index.php" class="d-inline-block">
+			<a href="index.php" class="d-inline-block">
 				<img src="../../../../global_assets/images/logo_light.png" alt="">
 			</a>
 		</div>
@@ -397,7 +397,20 @@
 
 
 				<!-- Main navigation -->
-				<li class="nav-item nav-item-submenu">
+				<div class="card card-sidebar-mobile">
+						<ul class="nav nav-sidebar" data-nav-type="accordion">
+	
+							<!-- Main -->
+							<!--<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
+							<li class="nav-item">
+								<a href="index.html" class="nav-link active">
+									<i class="icon-home4"></i>
+									<span>
+										Dashboard
+									</span>
+								</a>
+							</li>-->
+							<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-address-book"></i> <span>Empleados</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
@@ -436,6 +449,9 @@
 								<li class="nav-item"><a href="add_vacaciones.php" class="nav-link">Añadir</a></li>
 								<li class="nav-item"><a href="lista_vacaciones.php" class="nav-link">Listar</a></li>
 							</ul>
+						</li>
+						<li class="nav-item nav-item-menu"></li>
+						<a href="pagos_transporte.php" class="nav-link"><i class="icon-address-book"></i> <span>Pago de transporte</span></a>
 						</li>
 						</ul>
 					</div>

@@ -440,6 +440,9 @@
 								<li class="nav-item"><a href="lista_vacaciones.php" class="nav-link">Listar</a></li>
 							</ul>
 						</li>
+						<li class="nav-item nav-item-menu"></li>
+						<a href="pagos_transporte.php" class="nav-link"><i class="icon-address-book"></i> <span>Pago de transporte</span></a>
+						</li>
 						</ul>
 					</div>
 					<!-- /main navigation -->

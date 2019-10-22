@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Lista de empleados</title>
+	<title>Pago de transporte</title>
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -448,7 +448,7 @@
 						</li>
 							                                    
 						<li class="nav-item nav-item-menu"></li>
-						<a href="pagos_transporte.html" class="nav-link"><i class="icon-address-book"></i> <span>Pago de transporte</span></a>
+						<a href="pagos_transporte.php" class="nav-link"><i class="icon-address-book"></i> <span>Pago de transporte</span></a>
 						</li>
 						</ul>
 					</div>
