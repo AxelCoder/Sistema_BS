@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Registro de usuarios</title>
+	<title>Registro</title>
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -36,7 +36,7 @@
 	<!-- Main navbar -->
 	<div class="navbar navbar-expand-md navbar-dark">
 		<div class="navbar-brand">
-		<a href="index.php" class="d-inline-block">
+			<a href="index.html" class="d-inline-block">
 				<img src="../../../../global_assets/images/logo_light.png" alt="">
 			</a>
 		</div>
@@ -495,7 +495,7 @@
 				<!-- Form inputs -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Registro de empleados</h5>
+						<h5 class="card-title">Registro de tutorias</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -512,59 +512,72 @@
 								<legend class="text-uppercase font-size-sm font-weight-bold">Ingrese sus datos aqui</legend>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombres</label>
+									<label class="col-form-label col-lg-2">Matricula</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control" value="Axel Issai">
+										<input type="text" class="form-control" value="1930205">
 									</div>
 								</div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellidos</label>
+									<label class="col-form-label col-lg-2">Nombre</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control" value="Alemán Delgado">
+										<input type="text" class="form-control" value="Angel Lucio">
 									</div>
 								</div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre de usuario</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control"  value="AxelAD">
-									</div>
-								</div>
+								<div class="form-group">
+                                    <label class="col-form-label col-lg-2">Carrera</label>
+                                    <select name="combo">
+                                        <optgroup label="Carreras">
+                                            <option value="ID">ITI</option>
+                                            <option value="AZ">ISA</option>
+                                            <option value="CO">IM</option>
+                                            <option value="ID">ITM</option>
+                                            <option value="WY">LAYGE</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Correo electronico</label>
+									<label class="col-form-label col-lg-2">Asesor</label>
 									<div class="col-lg-10">
-											<input type="text" class="form-control"  value="axelad38@upv.edu.mx">
+											<input type="text" class="form-control"  value="Agustin Sanchez">
 										<!--<input type="text" class="form-control" placeholder="example@gmail.com">  Texto en gris-->
 									</div>
 								</div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Contraseña</label>
+									<label class="col-form-label col-lg-2">No. Asesor</label>
 									<div class="col-lg-10">
-										<input type="password" class="form-control"  value="uwygefuywegfuy">
+										<input type="text" class="form-control"  value="01">
 									</div>
 								</div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
+									<label class="col-form-label col-lg-2">Departamento</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control"  value="18">
+										<input type="text" class="form-control"  value="Redes">
 									</div>
 								</div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Habilidad</label>
+									<label class="col-form-label col-lg-2">ID</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control"  value="Programador Jr">
+										<input type="text" class="form-control"  value="13467">
 									</div>
 								</div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Dirección</label>
+									<label class="col-form-label col-lg-2">Tema atendido</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control"  value="Col. Las Americas">
+										<input type="text" class="form-control"  value="Problemas con programación">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2">Fecha de sesión</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control"  value="11/10/2019">
 									</div>
 									<button type="submit" class="btn bg-blue ml-3">Enviar <i class="icon-paperplane ml-2"></i></button>
 								</div>

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Registro de usuarios</title>
+	<title>Lista de tutorias</title>
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -23,10 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_inputs.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/datatables_basic.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -36,7 +37,7 @@
 	<!-- Main navbar -->
 	<div class="navbar navbar-expand-md navbar-dark">
 		<div class="navbar-brand">
-		<a href="index.php" class="d-inline-block">
+			<a href="index.html" class="d-inline-block">
 				<img src="../../../../global_assets/images/logo_light.png" alt="">
 			</a>
 		</div>
@@ -492,10 +493,10 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
+				<!-- Empleados -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Registro de empleados</h5>
+						<h5 class="card-title">Lista de tutorias</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -505,74 +506,97 @@
 	                	</div>
 					</div>
 
-					<div class="card-body">
-
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Ingrese sus datos aqui</legend>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombres</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="Axel Issai">
+					<table class="table datatable-basic">
+						<thead>
+							<tr>
+								<th>Matricula</th>
+								<th>Nombre</th>
+								<th>Carrera</th>
+								<th>Asesor</th>
+								<th>No. Asesor</th>
+								<th>Departamento de asesor</th>
+								<th>ID</th>
+								<th>Fecha de asesión</th>
+								<th>Tema atendido</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1930205</td>
+								<td>Angel Lucio</td>
+								<td>LAYGE</td>
+								<td>Agustin Sanchez</td>
+								<td>01</td>
+								<td>Redes</td>
+								<td>13467</td>
+								<td>11/10/2019</td>
+								<td>Problemas con programación</td>
+								</td>
+							</tr>
+							<tr>
+								<td>1930232</td>
+								<td>Juan Escutia</td>
+								<td>ITI</td>
+								<td>Jaqueline Diaz</td>
+								<td>20</td>
+								<td>Area administrativa</td>
+								<td>2346</td>
+								<td>23/10/2019</td>
+								<td>Problemas en casa</td>
+										</div>
 									</div>
-								</div>
+								</td>
+							</tr>
+							<tr>
+								<td>1930254</td>
+								<td>Manuel Gutierrez</td>
+								<td>ISA</td>
+								<td>Beatriz Baez</td>
+								<td>11</td>
+								<td>Recursos humanos</td>
+								<td>1237</td>
+								<td>19/10/2019</td>
+								<td>Problemas con compañeros</td>
+								</td>
+							</tr>
+							<tr>
+									<td>1930234</td>
+									<td>Yael Medina</td>
+									<td>ITI</td>
+									<td>Ana Alemán</td>
+									<td>14</td>
+									<td>Redes</td>
+									<td>1234</td>
+									<td>09/10/2019</td>
+									<td>Ayuda con algebra</td>
+								</td>
+							</tr>
+							<tr>
+									<td>1930267</td>
+									<td>Pablo Mata</td>
+									<td>ISA</td>
+									<td>Manuel Tirado</td>
+									<td>42</td>
+									<td>Recursos humanos</td>
+									<td>7534</td>
+									<td>19/10/2019</td>
+									<td>Problemas en casa</td>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- /Empleados -->
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellidos</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="Alemán Delgado">
-									</div>
-								</div>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre de usuario</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control"  value="AxelAD">
-									</div>
-								</div>
+			</div>
+			<!-- /content area -->
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Correo electronico</label>
-									<div class="col-lg-10">
-											<input type="text" class="form-control"  value="axelad38@upv.edu.mx">
-										<!--<input type="text" class="form-control" placeholder="example@gmail.com">  Texto en gris-->
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Contraseña</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control"  value="uwygefuywegfuy">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control"  value="18">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Habilidad</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control"  value="Programador Jr">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Dirección</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control"  value="Col. Las Americas">
-									</div>
-									<button type="submit" class="btn bg-blue ml-3">Enviar <i class="icon-paperplane ml-2"></i></button>
-								</div>
-							</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
 		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
 </body>
 </html>

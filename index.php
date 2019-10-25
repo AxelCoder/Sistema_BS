@@ -418,6 +418,7 @@
 							<a href="#" class="nav-link"><i class="icon-address-book"></i> <span>Empleados</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<!--<li class="nav-item"><a href="index.html" class="nav-link active">Default layout</a></li>-->
 								<li class="nav-item"><a href="edit_empleados.php" class="nav-link">Editar</a></li>
 								<li class="nav-item"><a href="add_usuarios.php" class="nav-link">Añadir</a></li>
 								<li class="nav-item"><a href="Empleados_lista.php" class="nav-link">Listar</a></li>
@@ -427,6 +428,7 @@
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Departamentos</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
+								<!--<li class="nav-item"><a href="index.html" class="nav-link active">Default</a></li>-->
 								<li class="nav-item"><a href="edit_departamentos.php" class="nav-link">Editar</a></li>
 								<li class="nav-item"><a href="add_departamentos.php" class="nav-link">Añadir</a></li>
 								<li class="nav-item"><a href="departamentos_lista.php" class="nav-link">Listar</a></li>
@@ -436,6 +438,7 @@
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Empresas</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
+								<!--<li class="nav-item"><a href="index.html" class="nav-link active">Default</a></li>-->
 								<li class="nav-item"><a href="edit_empresas.php" class="nav-link">Editar</a></li>
 								<li class="nav-item"><a href="add_empresas.php" class="nav-link">Añadir</a></li>
 								<li class="nav-item"><a href="empresas_lista.php" class="nav-link">Listar</a></li>
@@ -445,17 +448,40 @@
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Vacaciones</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
+								<!--<li class="nav-item"><a href="index.html" class="nav-link active">Default</a></li>-->
 								<li class="nav-item"><a href="edit_vacaciones.php" class="nav-link">Editar</a></li>
 								<li class="nav-item"><a href="add_vacaciones.php" class="nav-link">Añadir</a></li>
 								<li class="nav-item"><a href="lista_vacaciones.php" class="nav-link">Listar</a></li>
 							</ul>
 						</li>
-							                                    
+
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Tutorias</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Themes">
+								<!--<li class="nav-item"><a href="index.html" class="nav-link active">Default</a></li>-->
+								<li class="nav-item"><a href="edit_tutorias.php" class="nav-link">Editar</a></li>
+								<li class="nav-item"><a href="añadir_tutorias.php" class="nav-link">Añadir</a></li>
+								<li class="nav-item"><a href="lista_tutorias.php" class="nav-link">Listar</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Alumnos</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Themes">
+								<!--<li class="nav-item"><a href="index.html" class="nav-link active">Default</a></li>-->
+								<li class="nav-item"><a href="edit_alumnos.php" class="nav-link">Editar</a></li>
+								<li class="nav-item"><a href="add_alumnos.php" class="nav-link">Añadir</a></li>
+								<li class="nav-item"><a href="lista_alumnos.php" class="nav-link">Listar</a></li>
+							</ul>
+						</li>
+
 						<li class="nav-item nav-item-menu"></li>
 						<a href="pagos_transporte.php" class="nav-link"><i class="icon-address-book"></i> <span>Pago de transporte</span></a>
 						</li>
-					</ul>
-				</div>
+						</ul>
+					</div>
 				<!-- /main navigation -->
 
 			</div>

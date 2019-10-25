@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Registro de usuarios</title>
+	<title>Editar lista de empleados</title>
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -23,10 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/form_inputs.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/datatables_basic.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -36,7 +37,7 @@
 	<!-- Main navbar -->
 	<div class="navbar navbar-expand-md navbar-dark">
 		<div class="navbar-brand">
-		<a href="index.php" class="d-inline-block">
+			<a href="index.html" class="d-inline-block">
 				<img src="../../../../global_assets/images/logo_light.png" alt="">
 			</a>
 		</div>
@@ -398,18 +399,8 @@
 				<!-- Main navigation -->
 				<div class="card card-sidebar-mobile">
 						<ul class="nav nav-sidebar" data-nav-type="accordion">
-	
-							<!-- Main -->
-							<!--<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
-							<li class="nav-item">
-								<a href="index.html" class="nav-link active">
-									<i class="icon-home4"></i>
-									<span>
-										Dashboard
-									</span>
-								</a>
-							</li>-->
-							<li class="nav-item nav-item-submenu">
+
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-address-book"></i> <span>Empleados</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
@@ -492,87 +483,266 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Form inputs -->
+				<!-- Empleados -->
 				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Registro de empleados</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
+                        <div class="card-header header-elements-inline">
+                            <h5 class="card-title">Lista de empleados</h5>
+                            <div class="header-elements">
+                                <div class="list-icons">
+                                    <a class="list-icons-item" data-action="collapse"></a>
+                                    <a class="list-icons-item" data-action="reload"></a>
+                                    <a class="list-icons-item" data-action="remove"></a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <table class="table datatable-basic">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Matricula</th>
+                                    <th>Nombre</th>
+                                    <th>Carrera</th>
+                                    <th>Asesor</th>
+                                    <th>No. Asesor</th>
+                                    <th>Departamento de asesor</th>
+                                    <th>ID</th>
+                                    <th>Fecha de asesión</th>
+                                    <th>Tema atendido</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
 
-					<div class="card-body">
+							<td><button type="button" class="btn bg-danger" data-toggle="modal" data-target="#modal_theme_danger">Borrar <i class="icon-eraser"></i></button></td>
+			
+							<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">editar <i class="icon-pencil3 mr-2"></i></button></td>
+								
+                            <td>1930205</td>
+                            <td>Angel Lucio</td>
+                            <td>LAYGE</td>
+                            <td>Agustin Sanchez</td>
+                            <td>01</td>
+                            <td>Redes</td>
+                            <td>13467</td>
+                            <td>11/10/2019</td>
+                            <td>Problemas con programación</td>
+                        </td>
+                    </tr>
+                <tr>
+        
+						<td><button type="button" class="btn bg-danger" data-toggle="modal" data-target="#modal_theme_danger">Borrar <i class="icon-eraser"></i></button></td>
 
-						<form action="#">
-							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Ingrese sus datos aqui</legend>
+						<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">editar <i class="icon-pencil3 mr-2"></i></button></td>	
+							
+                        <td>1930232</td>
+                        <td>Juan Escutia</td>
+                        <td>ITI</td>
+                        <td>Jaqueline Diaz</td>
+                        <td>20</td>
+                        <td>Area administrativa</td>
+                        <td>2346</td>
+                        <td>23/10/2019</td>
+                        <td>Problemas en casa</td>
+								</td>
+							</tr>
+							<tr>
+							
+							<td><button type="button" class="btn bg-danger" data-toggle="modal" data-target="#modal_theme_danger">Borrar <i class="icon-eraser"></i></button></td>
+	
+							<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar <i class="icon-pencil3 mr-2"></i></button></td>
+								
+                            <td>1930254</td>
+                            <td>Manuel Gutierrez</td>
+                            <td>ISA</td>
+                            <td>Beatriz Baez</td>
+                            <td>11</td>
+                            <td>Recursos humanos</td>
+                            <td>1237</td>
+                            <td>19/10/2019</td>
+                            <td>Problemas con compañeros</td>
+								</td>
+							</tr>
+							<tr>
 
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombres</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="Axel Issai">
+							<td><button type="button" class="btn bg-danger" data-toggle="modal" data-target="#modal_theme_danger">Borrar <i class="icon-eraser"></i></button></td>
+			
+							<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar <i class="icon-pencil3 mr-2"></i></button></td>
+								
+                            <td>1930234</td>
+                            <td>Yael Medina</td>
+                            <td>ITI</td>
+                            <td>Ana Alemán</td>
+                            <td>14</td>
+                            <td>Redes</td>
+                            <td>1234</td>
+                            <td>09/10/2019</td>
+                            <td>Ayuda con algebra</td>
+								</td>
+							</tr>
+							<tr>
+								
+							<td><button type="button" class="btn bg-danger" data-toggle="modal" data-target="#modal_theme_danger">Borrar <i class="icon-eraser"></i></button></td>
+	
+							<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_remote">Editar <i class="icon-pencil3 mr-2"></i></button></td>
+								
+                            <td>1930267</td>
+                            <td>Pablo Mata</td>
+                            <td>ISA</td>
+                            <td>Manuel Tirado</td>
+                            <td>42</td>
+                            <td>Recursos humanos</td>
+                            <td>7534</td>
+                            <td>19/10/2019</td>
+                            <td>Problemas en casa</td>
+								</td>
+                            </tr>
+                            <tr> 
+						</tbody>
+					</table>
+                </div>
+                
+
+
+				<!-- /Empleados -->
+
+			</div>
+			<!-- /content area -->
+
+					 <!-- Modal Eliminar -->
+					 <div id="modal_theme_danger" class="modal fade" tabindex="-1">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header bg-danger">
+										<h6 class="modal-title">Confirmar eliminación</h6>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
 									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Apellidos</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control" value="Alemán Delgado">
+		
+									<div class="modal-body">
+										<h6 class="font-weight-semibold">¿Esta seguro que desea eliminar?</h6>
 									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Nombre de usuario</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control"  value="AxelAD">
+									<div class="modal-footer">
+										<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+										<button type="button" class="btn bg-danger">Eiminar</button>
 									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Correo electronico</label>
-									<div class="col-lg-10">
-											<input type="text" class="form-control"  value="axelad38@upv.edu.mx">
-										<!--<input type="text" class="form-control" placeholder="example@gmail.com">  Texto en gris-->
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Contraseña</label>
-									<div class="col-lg-10">
-										<input type="password" class="form-control"  value="uwygefuywegfuy">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Edad</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control"  value="18">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Habilidad</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control"  value="Programador Jr">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2">Dirección</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control"  value="Col. Las Americas">
-									</div>
-									<button type="submit" class="btn bg-blue ml-3">Enviar <i class="icon-paperplane ml-2"></i></button>
 								</div>
 							</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+						</div>
+						<!-- /Modal Eliminar -->
+		
+			<!-- Modal Editar -->
+		<div id="modal_remote" class="modal" tabindex="-1">
+				<div class="modal-dialog modal-full">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Editar Empleados</h5>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+                        <div class="card">
+                                </div>
+            
+                                <div class="card-body">
+            
+                                    <form action="#">
+                                        <fieldset class="mb-3">
+                                            <legend class="text-uppercase font-size-sm font-weight-bold">Ingrese sus datos aqui</legend>
+            
+                                            <div class="form-group row">
+                                                <label class="col-form-label col-lg-2">Nombres</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control" value="Axel Issai">
+                                                </div>
+                                            </div>
+            
+                                            <div class="form-group row">
+                                                <label class="col-form-label col-lg-2">Apellidos</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control" value="Alemán Delgado">
+                                                </div>
+                                            </div>
+            
+                                            <div class="form-group row">
+                                                <label class="col-form-label col-lg-2">Nombre de usuario</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control"  value="AxelAD">
+                                                </div>
+                                            </div>
+            
+                                            <div class="form-group row">
+                                                <label class="col-form-label col-lg-2">Correo electronico</label>
+                                                <div class="col-lg-10">
+                                                        <input type="text" class="form-control"  value="axelad38@upv.edu.mx">
+                                                    <!--<input type="text" class="form-control" placeholder="example@gmail.com">  Texto en gris-->
+                                                </div>
+                                            </div>
+            
+                                            <div class="form-group row">
+                                                <label class="col-form-label col-lg-2">Contraseña</label>
+                                                <div class="col-lg-10">
+                                                    <input type="password" class="form-control"  value="uwygefuywegfuy">
+                                                </div>
+                                            </div>
+            
+                                            <div class="form-group row">
+                                                <label class="col-form-label col-lg-2">Edad</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control"  value="18">
+                                                </div>
+                                            </div>
+            
+                                            <div class="form-group row">
+                                                <label class="col-form-label col-lg-2">Habilidad</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control"  value="Programador Jr">
+                                                </div>
+                                            </div>
+            
+                                            <div class="form-group row">
+                                                <label class="col-form-label col-lg-2">Dirección</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control"  value="Col. Las Americas">
+                                                </div>
+
+						<div class="modal-body"></div>
+			
+						<div class="modal-footer">
+							<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+							<button type="button" class="btn bg-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Modal Editar -->
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
+						<li class="nav-item"><a href="http://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li>
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
 		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
 </body>
 </html>
